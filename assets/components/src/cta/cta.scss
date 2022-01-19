@@ -1,0 +1,35 @@
+@import "../../../global/src/css/functions";
+@import "../../../global/src/css/settings/variables";
+
+.cta-block {
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    .block {
+        &__wrapper {
+        }
+
+        &__content {
+        }
+
+        &__title {
+        }
+
+        &__description {
+        }
+
+        &__actions {
+
+        }
+    }
+
+    // settings modifier(s)
+    &.text-light {
+        .block {
+            &__title,
+            &__description {
+                color: get-brand(white);
+            }
+        }
+    }
+}

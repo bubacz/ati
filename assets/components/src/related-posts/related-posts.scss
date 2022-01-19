@@ -1,0 +1,25 @@
+@import "../../../global/src/css/functions";
+@import "../../../global/src/css/settings/variables";
+
+$this: '.related-posts';
+
+#{$this} {
+
+    .block {
+
+        &__header {
+        }
+
+        &__overline {
+
+        }
+
+        &__title {
+
+        }
+
+        &__description {
+
+        }
+    }
+}

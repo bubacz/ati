@@ -1,0 +1,64 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.skip-link {
+
+}
+
+.site {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+
+    &-header {
+        position: relative;
+
+        &__wrapper {
+            @include media(">=md") {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    &-footer {
+        margin-top: auto;
+    }
+
+    &-branding {
+        
+    }
+
+    &-title {
+
+    }
+
+    &-description {
+
+    }
+}
+
+.search-form {
+
+    .search-field {
+        @include media(">=md") {
+            display: none;
+        }
+    }
+
+    .search-submit {
+        display: none;
+    }
+
+    &.toggled {
+        .search-field {
+            @include media(">=md") {
+                display: block;
+            }
+        }
+    }
+}

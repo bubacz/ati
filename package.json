@@ -1,0 +1,76 @@
+{
+  "name": "ati-web",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Atlantic BT",
+  "scripts": {
+    "build": "node ./node_modules/gulp/bin/gulp.js",
+    "watch": "node ./node_modules/gulp/bin/gulp.js watch",
+    "stylelint": "stylelint '**/*.scss'; exit 0"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "browser-sync": "^2.27.5",
+    "dir-archiver": "^1.2.0",
+    "fs-extra": "^9.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-if": "^3.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "merge-stream": "^2.0.0",
+    "node-sass": "^6.0.1",
+    "sass": "^1.42.1",
+    "stylelint": "^14.2.0",
+    "stylelint-config-standard-scss": "^3.0.0",
+    "stylelint-no-unsupported-browser-features": "^5.0.2"
+  },
+  "dependencies": {
+    "babel-loader": "^8.2.2",
+    "rfs": "^9.0.6"
+  },
+  "stylelint": {
+    "plugins": [
+      "stylelint-no-unsupported-browser-features"
+    ],
+    "extends": [
+      "stylelint-config-standard-scss"
+    ],
+    "rules": {
+      "plugin/no-unsupported-browser-features": [
+        true,
+        {
+          "browsers": [
+            "last 2 chrome versions",
+            "last 2 firefox versions",
+            "last 2 safari versions"
+          ],
+          "ignore": [
+            "rem"
+          ],
+          "ignorePartialSupport": true
+        }
+      ]
+    },
+    "defaultSeverity": "warning"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 2 chrome versions",
+      "last 2 firefox versions",
+      "last 2 safari versions"
+    ]
+  }
+}

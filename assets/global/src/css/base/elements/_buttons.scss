@@ -1,0 +1,195 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button {
+	border-style: solid;
+	display: inline-block;
+	border-color: get-gray(carbon-400);
+	border-width: rem(2);
+	border-radius: rem(3);
+	color: get-brand(carbon-900);
+	line-height: 1;
+	padding: rem(12) rem(24);
+	text-decoration: none;
+	transition: all $animation-average $base-animation-easing;
+	transition-property: background, border-color;
+	background:  get-gray(carbon-400);
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&[disabled] {
+		color: get-gray(carbon-400);
+		background: none;
+
+		&:hover {
+			cursor: not-allowed;
+		}
+	}
+
+	&:active,
+	&:focus {
+		outline: get-brand(purple) auto 1px;
+	}
+}
+
+.button {
+
+	&--primary {
+		background-color:  get-brand(purple);
+		border-color: get-brand(purple);
+		color: get-brand(dust);
+
+		&:hover {
+			background: darken(get-brand(purple), 10%);
+		}
+
+		&:focus {
+			outline: darken(get-brand(purple), 10%) auto 1px;
+			background: darken(get-brand(purple), 10%);
+		}
+
+		&-outline {
+			background:  none;
+			border-color: get-brand(purple);
+			color: get-brand(purple);
+
+			&:hover {
+				background: get-brand(purple);
+				color: get-brand(dust);
+
+			}
+	
+			&:focus {
+				outline: darken(get-brand(purple), 10%) auto 1px;
+				background: get-brand(purple);
+				color: get-brand(dust);
+
+			}
+		}
+	}
+
+	&--secondary {
+		background-color:  get-brand(green);
+		border-color: get-brand(green);
+		color: get-brand(dust);
+
+		&:hover {
+			background: darken(get-brand(green), 10%);
+		}
+
+		&:focus {
+			outline: darken(get-brand(green), 10%) auto 1px;
+			background: darken(get-brand(green), 10%);
+		}
+
+		&-outline {
+			background:  none;
+			border-color: get-brand(green);
+			color: get-brand(green);
+
+			&:hover {
+				background: get-brand(green);
+				color: get-brand(dust);
+
+			}
+	
+			&:focus {
+				outline: darken(get-brand(green), 10%) auto 1px;
+				background: get-brand(green);
+				color: get-brand(dust);
+
+			}
+		}
+	}
+
+	&--light {
+		background-color:  get-brand(dust);
+		border-color: get-brand(dust);
+		color: get-brand(carbon-900);
+
+		&:hover {
+			background: none;
+			color: get-brand(dust);
+		}
+
+		&:focus {
+			outline: darken(get-brand(dust), 10%) auto 1px;
+			background: none;
+			color: get-brand(dust);
+		}
+
+		&-outline {
+			background:  none;
+			border-color: get-brand(dust);
+			color: get-brand(dust);
+
+			&:hover {
+				background: get-brand(dust);
+				color: get-brand(carbon-900);
+
+			}
+	
+			&:focus {
+				outline: darken(get-brand(dust), 10%) auto 1px;
+				background: get-brand(dust);
+				color: get-brand(carbon-900);
+
+			}
+		}
+	}
+
+	&--dark {
+		background-color:  get-brand(carbon-900);
+		border-color: get-brand(carbon-900);
+		color: get-brand(dust);
+
+		&:hover {
+			background: none;
+			color: get-brand(carbon-900);
+		}
+
+		&:focus {
+			outline: darken(get-brand(carbon-900), 10%) auto 1px;
+			background: darken(get-brand(carbon-900), 10%);
+		}
+
+		&-outline {
+			background:  none;
+			border-color: get-brand(carbon-900);
+			color: get-brand(carbon-900);
+
+			&:hover {
+				background: get-brand(carbon-900);
+				color: get-brand(dust);
+
+			}
+	
+			&:focus {
+				outline: darken(get-brand(carbon-900), 10%) auto 1px;
+				background: get-brand(carbon-900);
+				color: get-brand(dust);
+
+			}
+		}
+	}
+
+	&--plain {
+		background: none;
+		border: none;
+		border: none;
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+.buttons {
+	&.aligncenter {
+		text-align: center;
+	}
+}

@@ -1,0 +1,119 @@
+@import "../../../global/src/css/functions";
+@import "../../../global/src/css/settings/variables";
+
+$this: '.split-block'; // main container
+
+#{$this} {
+    position: relative;
+    background-size: cover;
+    
+    @include media('>=md') {
+    }
+
+    @include media('>=lg') {
+    }
+
+    .block {
+        &__wrapper {
+            @include media('>=md') {
+                display: flex;
+            }
+        }
+
+        &__header {
+            position: relative;
+            z-index: 1;
+    
+            @include media('>=md') {
+                width: 52%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                padding-right: rem(16);
+                padding-left: 0;
+            }
+    
+            @include media('>=lg') {
+                width: rem(590)
+            }
+        }
+
+        &__title {
+        }
+
+        &__overline {
+        }
+
+        &__description {
+            font-size: rem(16);
+        }
+    }
+
+    &__img {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        @include media('>=md') {
+            flex: 1;
+        }
+
+        .img-valign-top & {
+            @include media('>=md') {
+                justify-content: flex-start;
+            }
+        }
+
+        .img-valign-bottom & {
+            @include media('>=md') {
+                justify-content: flex-end;
+            }
+        }
+
+        .img-valign-center & {
+            @include media('>=md') {
+                justify-content: center;
+            }
+        }
+    }
+
+    // mirroring
+    &.reverse {
+
+        .block {
+            &__wrapper {
+                @include media('>=md') {
+                    flex-direction: row-reverse;
+                }
+            }
+
+            &__header {
+                @include media('>=md') {
+                    padding-left: rem(48);
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+
+    // text color
+    &.text-light {
+        color: get-brand(white);
+
+        .block {
+            
+            &__title,
+            &__description {
+                color: get-brand(white);
+            }
+
+            &__overline {
+                color: get-brand(light-blue);
+            }
+        }
+    }
+}

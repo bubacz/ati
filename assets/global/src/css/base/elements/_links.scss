@@ -1,0 +1,24 @@
+a:not(.button) {
+	color: get-brand(blue);
+	transition: color $animation-average $base-animation-easing;
+
+	&:visited {
+		color: get-brand(purple);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: lighten(get-brand(blue), 20%);
+		text-decoration: none;
+	}
+
+	&:focus {
+		outline: thin dotted;
+	}
+
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}

@@ -1,0 +1,32 @@
+.info-overview .block__content {
+  padding-top: 2.25rem;
+}
+.info-overview__item {
+  position: relative;
+  padding: 1rem 0 1rem 4.0625rem;
+  display: block;
+  text-decoration: none;
+  transition: background 300ms cubic-bezier(0.62, 0.01, 0.37, 0.99);
+}
+@media (min-width: 640px) {
+  .info-overview__item {
+    width: calc(50% - 10px);
+    align-self: flex-start;
+  }
+}
+@media (min-width: 1600px) {
+  .info-overview__item {
+    width: calc(50% - 15px);
+  }
+}
+.info-overview__item-icon {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 1.25rem;
+}
+.info-overview__item-icon.small {
+  font-size: 1.375rem;
+}
+/*# sourceMappingURL=info-overview.css.map */

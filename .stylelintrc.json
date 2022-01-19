@@ -1,0 +1,20 @@
+{
+    "ignoreFiles": [
+        "assets/global/src/css/base/normalize/_box-sizing.scss",
+        "assets/global/src/css/base/normalize/_normalize.scss"
+    ],
+    "rules": {
+        "font-family-no-missing-generic-family-keyword": null,
+        "no-descending-specificity": null,
+        "block-no-empty": true,
+        "no-duplicate-selectors": null,
+        "font-family-no-duplicate-names": true,
+        "color-no-invalid-hex": true,
+        "time-min-milliseconds": [
+            100,
+            {
+                "ignore": ["delay"]
+            }
+		]
+    }
+}

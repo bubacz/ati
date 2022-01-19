@@ -1,0 +1,35 @@
+.site-main {
+    overflow: hidden; // set so overflow auto for <pre> in kitchen sink works correctly
+}
+
+.block {
+    // create &[data-color="brand_color"] for each color in $brand
+    @each $kolar,
+        $color in $brand {
+        &[data-color='"" + $kolar']  {
+            color: $color;
+        }
+    }
+}
+
+.alert {
+    @each $kolar,
+        $color in $alert {
+        &.#{$kolar}  {
+            background: $color;
+            color: #FFF;
+        }
+    }
+}
+
+.entry-header {
+
+    &__subtitle {
+        margin-bottom: 0;
+        text-transform: uppercase;
+    }
+
+    .entry-title {
+        margin-top: 0;
+    }
+}

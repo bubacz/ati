@@ -1,0 +1,72 @@
+// Brand Colors
+//==================================================================*/
+// Usage: color: get-brand(green); also view each function in _global.scss
+// brand variable map
+$brand: (
+	green: #759b21,
+	purple: #9b2175,
+	blue: #21759b,
+	light-blue: #2a95c5,
+	carbon-900: #1b1b1c,
+	dust: #f7f7f7
+);
+
+// Gray Colors
+//==================================================================*/
+// Usage: color: get-gray(carbon-800);
+// gray variable map
+$gray: (
+	carbon-800: #282728,
+	carbon-700: #343436,
+	carbon-600: #494949,
+	carbon-500: #646569,
+	carbon-400: #adadad
+);
+
+// Gray Colors
+//==================================================================*/
+// Usage: color: get-alert(danger); also view each function in _global.scss
+// gray variable map
+$alert: (
+	danger: #f44336,
+	success: #4caf50,
+	info: #2196f3,
+	warning: #ff9800
+);
+
+$font__main: // Safari for macOS and iOS (San Francisco)
+	-apple-system,
+	// Chrome < 56 for macOS (San Francisco)
+	BlinkMacSystemFont,
+	// Windows
+	"Segoe UI",
+	// Android
+	Roboto,
+	// Basic web fallback
+	"Helvetica Neue",
+	Arial,
+	// Linux
+	"Noto Sans",
+	// Sans serif fallback
+	sans-serif,
+	// Emoji fonts
+	"Apple Color Emoji",
+	"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+// font for <code>
+$font__code: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+// font for <pre>
+$font__pre: "Courier 10 Pitch", courier, monospace;
+
+$site__width: 1400px;
+
+$theme_icons: "/wp-content/themes/nomad/assets/img/icons/";
+$theme_images: "/wp-content/themes/nomad/assets/img/";
+
+// Transition
+//==================================================================*/
+// Usage: transition: all $animation-average $base-animation-easing;
+$animation-fast: 100ms;
+$animation-average: 300ms;
+$animation-slow: 500ms;
+$base-animation-easing: cubic-bezier(0.62, 0.01, 0.37, 0.99);
