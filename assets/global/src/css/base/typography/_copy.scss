@@ -18,7 +18,6 @@ address {
 }
 
 pre {
-	background: get-color(gallery);
 	font-family: $font__pre;
 	line-height: 1.6;
 	margin-bottom: 1.6em;
@@ -38,8 +37,8 @@ var {
 
 code {
 	border-radius: rem(3);
-	color: get-alert(danger);
-	background-color: rgba(get-alert(danger), .1);
+	color: $color-danger;
+	background-color: rgba($color-danger, .1);
 	
 	pre & {
 		color: inherit;
@@ -56,20 +55,16 @@ samp {
 kbd {
 	padding: 2px 4px;
     font-size: 90%;
-    color: get-color(white);
-    background-color: get-color(cod-gray);
     border-radius: rem(3);
 }
 
 abbr,
 acronym {
-	border-bottom: 1px dotted get-color(dove-gray);
 	cursor: help;
 }
 
 mark,
 ins {
-	background: get-color(shalimar);
 	text-decoration: none;
 }
 

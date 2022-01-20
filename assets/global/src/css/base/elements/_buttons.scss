@@ -5,23 +5,23 @@ input[type="submit"],
 .button {
 	border-style: solid;
 	display: inline-block;
-	border-color: get-gray(carbon-400);
+	border-color: $color-grey-light;
 	border-width: rem(2);
 	border-radius: rem(3);
-	color: get-brand(carbon-900);
+	color: $color-grey;
 	line-height: 1;
 	padding: rem(12) rem(24);
 	text-decoration: none;
 	transition: all $animation-average $base-animation-easing;
 	transition-property: background, border-color;
-	background:  get-gray(carbon-400);
+	background:  $color-grey-light;
 
 	&:hover {
 		cursor: pointer;
 	}
 
 	&[disabled] {
-		color: get-gray(carbon-400);
+		color: $color-grey-light;
 		background: none;
 
 		&:hover {
@@ -31,146 +31,146 @@ input[type="submit"],
 
 	&:active,
 	&:focus {
-		outline: get-brand(purple) auto 1px;
+		outline: $color-red auto 1px;
 	}
 }
 
 .button {
 
 	&--primary {
-		background-color:  get-brand(purple);
-		border-color: get-brand(purple);
-		color: get-brand(dust);
+		background-color:  $color-red;
+		border-color: $color-red;
+		color: $color-white;
 
 		&:hover {
-			background: darken(get-brand(purple), 10%);
+			background: darken($color-red, 10%);
 		}
 
 		&:focus {
-			outline: darken(get-brand(purple), 10%) auto 1px;
-			background: darken(get-brand(purple), 10%);
+			outline: darken($color-red, 10%) auto 1px;
+			background: darken($color-red, 10%);
 		}
 
 		&-outline {
 			background:  none;
-			border-color: get-brand(purple);
-			color: get-brand(purple);
+			border-color: $color-red;
+			color: $color-red;
 
 			&:hover {
-				background: get-brand(purple);
-				color: get-brand(dust);
+				background: $color-red;
+				color: $color-white;
 
 			}
 	
 			&:focus {
-				outline: darken(get-brand(purple), 10%) auto 1px;
-				background: get-brand(purple);
-				color: get-brand(dust);
+				outline: darken($color-red, 10%) auto 1px;
+				background: $color-red;
+				color: $color-white;
 
 			}
 		}
 	}
 
 	&--secondary {
-		background-color:  get-brand(green);
-		border-color: get-brand(green);
-		color: get-brand(dust);
+		background-color:  $color-black;
+		border-color: $color-black;
+		color: $color-white;
 
 		&:hover {
-			background: darken(get-brand(green), 10%);
+			background: darken($color-black, 10%);
 		}
 
 		&:focus {
-			outline: darken(get-brand(green), 10%) auto 1px;
-			background: darken(get-brand(green), 10%);
+			outline: darken($color-black, 10%) auto 1px;
+			background: darken($color-black, 10%);
 		}
 
 		&-outline {
 			background:  none;
-			border-color: get-brand(green);
-			color: get-brand(green);
+			border-color: $color-black;
+			color: $color-black;
 
 			&:hover {
-				background: get-brand(green);
-				color: get-brand(dust);
+				background: $color-black;
+				color: $color-white;
 
 			}
 	
 			&:focus {
-				outline: darken(get-brand(green), 10%) auto 1px;
-				background: get-brand(green);
-				color: get-brand(dust);
+				outline: darken($color-black, 10%) auto 1px;
+				background: $color-black;
+				color: $color-white;
 
 			}
 		}
 	}
 
 	&--light {
-		background-color:  get-brand(dust);
-		border-color: get-brand(dust);
-		color: get-brand(carbon-900);
+		background-color:  $color-white;
+		border-color: $color-white;
+		color: $color-grey;
 
 		&:hover {
 			background: none;
-			color: get-brand(dust);
+			color: $color-white;
 		}
 
 		&:focus {
-			outline: darken(get-brand(dust), 10%) auto 1px;
+			outline: darken($color-white, 10%) auto 1px;
 			background: none;
-			color: get-brand(dust);
+			color: $color-white;
 		}
 
 		&-outline {
 			background:  none;
-			border-color: get-brand(dust);
-			color: get-brand(dust);
+			border-color: $color-white;
+			color: $color-white;
 
 			&:hover {
-				background: get-brand(dust);
-				color: get-brand(carbon-900);
+				background: $color-white;
+				color: $color-grey;
 
 			}
 	
 			&:focus {
-				outline: darken(get-brand(dust), 10%) auto 1px;
-				background: get-brand(dust);
-				color: get-brand(carbon-900);
+				outline: darken($color-white, 10%) auto 1px;
+				background: $color-white;
+				color: $color-grey;
 
 			}
 		}
 	}
 
 	&--dark {
-		background-color:  get-brand(carbon-900);
-		border-color: get-brand(carbon-900);
-		color: get-brand(dust);
+		background-color:  $color-grey;
+		border-color: $color-grey;
+		color: $color-white;
 
 		&:hover {
 			background: none;
-			color: get-brand(carbon-900);
+			color: $color-grey;
 		}
 
 		&:focus {
-			outline: darken(get-brand(carbon-900), 10%) auto 1px;
-			background: darken(get-brand(carbon-900), 10%);
+			outline: darken($color-grey, 10%) auto 1px;
+			background: darken($color-grey, 10%);
 		}
 
 		&-outline {
 			background:  none;
-			border-color: get-brand(carbon-900);
-			color: get-brand(carbon-900);
+			border-color: $color-grey;
+			color: $color-grey;
 
 			&:hover {
-				background: get-brand(carbon-900);
-				color: get-brand(dust);
+				background: $color-grey;
+				color: $color-white;
 
 			}
 	
 			&:focus {
-				outline: darken(get-brand(carbon-900), 10%) auto 1px;
-				background: get-brand(carbon-900);
-				color: get-brand(dust);
+				outline: darken($color-grey, 10%) auto 1px;
+				background: $color-grey;
+				color: $color-white;
 
 			}
 		}

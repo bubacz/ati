@@ -1,15 +1,15 @@
 a:not(.button) {
-	color: get-brand(blue);
+	color: $color-black;
 	transition: color $animation-average $base-animation-easing;
 
 	&:visited {
-		color: get-brand(purple);
+		color: $color-red;
 	}
 
 	&:hover,
 	&:focus,
 	&:active {
-		color: lighten(get-brand(blue), 20%);
+		color: lighten($color-black, 20%);
 		text-decoration: none;
 	}
 

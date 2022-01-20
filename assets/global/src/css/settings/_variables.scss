@@ -1,71 +1,96 @@
 // Brand Colors
 //==================================================================*/
-// Usage: color: get-brand(green); also view each function in _global.scss
-// brand variable map
+$color-red: #E7131D;
+$color-orange: #C15401;
+$color-cream: #FCEED1;
+$color-cream-light: #FEF7E7;
+$color-grey: #9F9F9F;
+$color-grey-light: #C4C4C4;
+$color-grey-dark: #494949;
+$color-white: #F9F9F9;
+$color-black: #000000;
+
 $brand: (
-	green: #759b21,
-	purple: #9b2175,
-	blue: #21759b,
-	light-blue: #2a95c5,
-	carbon-900: #1b1b1c,
-	dust: #f7f7f7
+	"red": $color-red,
+    "orange": $color-orange,
+    "cream": $color-cream,
+    "light": $color-cream-light,
+    "grey": $color-grey,
+    "grey-light": $color-grey-light,
+    "grey-dark": $color-grey-dark,
+    "white": $color-white,
+    "black": $color-black
 );
 
-// Gray Colors
-//==================================================================*/
-// Usage: color: get-gray(carbon-800);
-// gray variable map
-$gray: (
-	carbon-800: #282728,
-	carbon-700: #343436,
-	carbon-600: #494949,
-	carbon-500: #646569,
-	carbon-400: #adadad
-);
 
-// Gray Colors
+// Alert Colors
 //==================================================================*/
-// Usage: color: get-alert(danger); also view each function in _global.scss
-// gray variable map
+$color-danger: #f44336;
+$color-success: #4CAF50;
+$color-info: #2196F3;
+$color-warning: #ff9800;
+
 $alert: (
-	danger: #f44336,
-	success: #4caf50,
-	info: #2196f3,
-	warning: #ff9800
+	danger: $color-danger,
+    success: $color-success,
+    info: $color-info,
+    warning: $color-warning
 );
 
-$font__main: // Safari for macOS and iOS (San Francisco)
-	-apple-system,
-	// Chrome < 56 for macOS (San Francisco)
-	BlinkMacSystemFont,
-	// Windows
-	"Segoe UI",
-	// Android
-	Roboto,
-	// Basic web fallback
-	"Helvetica Neue",
-	Arial,
-	// Linux
-	"Noto Sans",
-	// Sans serif fallback
-	sans-serif,
-	// Emoji fonts
-	"Apple Color Emoji",
-	"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+// Font Weights
+//==================================================================*/
+$weight-thin: 100;
+$weight-extra-light: 200;
+$weight-light: 300;
+$weight-regular: 400;
+$weight-medium: 500;
+$weight-semi-bold: 600;
+$weight-bold: 700;
+$weight-extra-bold: 800;
+$weight-black: 900;
+
+
+// Base Fonts
+//==================================================================*/
+$font__main: "Univers LT Std",
+// Safari for macOS and iOS (San Francisco)
+-apple-system,
+// Chrome < 56 for macOS (San Francisco)
+BlinkMacSystemFont,
+// Windows
+"Segoe UI",
+// Android
+Roboto,
+// Basic web fallback
+"Helvetica Neue",
+Arial,
+// Linux
+"Noto Sans",
+// Sans serif fallback
+sans-serif,
+ !default;
 
 // font for <code>
-$font__code: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-// font for <pre>
-$font__pre: "Courier 10 Pitch", courier, monospace;
+$font__code: monaco,
+consolas,
+"Andale Mono",
+"DejaVu Sans Mono",
+monospace;
 
+// font for <pre>
+$font__pre: "Courier 10 Pitch",
+courier,
+monospace;
+
+
+// Site Dimensions
+//==================================================================*/
 $site__width: 1400px;
 
-$theme_icons: "/wp-content/themes/nomad/assets/img/icons/";
-$theme_images: "/wp-content/themes/nomad/assets/img/";
 
 // Transition
 //==================================================================*/
-// Usage: transition: all $animation-average $base-animation-easing;
 $animation-fast: 100ms;
 $animation-average: 300ms;
 $animation-slow: 500ms;

@@ -28,7 +28,7 @@
         .block {
             &__title,
             &__description {
-                color: get-brand(white);
+                color: $color-white;
             }
         }
     }

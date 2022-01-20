@@ -1,10 +1,13 @@
+// Adobe Typekit
+// @import url("https://use.typekit.net/afy5ufa.css");
+
 body,
 button,
 input,
 select,
 optgroup,
 textarea {
-	color: get-brand(carbon-900);
+	color: $color-black;
 	font-family: $font__main;
 	font-size: 1rem;
 	line-height: 1.5;

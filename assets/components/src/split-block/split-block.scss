@@ -102,17 +102,17 @@ $this: '.split-block'; // main container
 
     // text color
     &.text-light {
-        color: get-brand(white);
+        color: $color-white;
 
         .block {
             
             &__title,
             &__description {
-                color: get-brand(white);
+                color: $color-white;
             }
 
             &__overline {
-                color: get-brand(light-blue);
+                color: $color-orange;
             }
         }
     }

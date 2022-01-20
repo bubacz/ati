@@ -14,18 +14,18 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	color: get-gray(carbon-700);
-	border: 1px solid get-gray(carbon-600);
+	color: $color-grey-dark;
+	border: 1px solid $color-grey;
 	border-radius: 3px;
 	padding: 3px;
 
 	&:focus {
-		color: get-gray(carbon-400);
+		color: $color-grey-light;
 	}
 }
 
 select {
-	border: 1px solid get-gray(carbon-600);
+	border: 1px solid $color-grey;
 }
 
 textarea {

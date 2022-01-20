@@ -70,12 +70,12 @@
   }
 }
 .split-block.text-light {
-  color: white;
+  color: #F9F9F9;
 }
 .split-block.text-light .block__title, .split-block.text-light .block__description {
-  color: white;
+  color: #F9F9F9;
 }
 .split-block.text-light .block__overline {
-  color: #2a95c5;
+  color: #C15401;
 }
 /*# sourceMappingURL=split-block.css.map */

@@ -2,7 +2,7 @@
 @import "../../../global/src/css/settings/variables";
 
 .entry-header {
-    background-color: get-gray(carbon-800);
+    background-color: $color-grey-dark;
     position: relative;
     overflow: hidden;
     color: white;
