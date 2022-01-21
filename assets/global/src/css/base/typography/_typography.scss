@@ -1,5 +1,4 @@
-// Adobe Typekit
-// @import url("https://use.typekit.net/afy5ufa.css");
+@import "fonts";
 
 body,
 button,
@@ -7,10 +6,10 @@ input,
 select,
 optgroup,
 textarea {
-	color: $color-black;
-	font-family: $font__main;
-	font-size: 1rem;
-	line-height: 1.5;
+    color: $color-black;
+    font-family: $font__main;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 @import "headings";

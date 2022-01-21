@@ -53,35 +53,40 @@ $weight-black: 900;
 
 // Base Fonts
 //==================================================================*/
-$font__main: "Univers LT Std",
-// Safari for macOS and iOS (San Francisco)
--apple-system,
-// Chrome < 56 for macOS (San Francisco)
-BlinkMacSystemFont,
-// Windows
-"Segoe UI",
-// Android
-Roboto,
-// Basic web fallback
-"Helvetica Neue",
-Arial,
-// Linux
-"Noto Sans",
-// Sans serif fallback
-sans-serif,
- !default;
+$font__fallbacks:
+    // Safari for macOS and iOS (San Francisco)
+    -apple-system,
+    // Chrome < 56 for macOS (San Francisco)
+    BlinkMacSystemFont,
+    // Windows
+    "Segoe UI",
+    // Android
+    Roboto,
+    // Basic web fallback
+    "Helvetica Neue",
+    Arial,
+    // Linux
+    "Noto Sans",
+    // Sans serif fallback
+    sans-serif,
+    !default;
+    
+$font__main: "Univers LT Std", $font__fallbacks;
+$font__headings: "Univers LT Std Condensed", $font__fallbacks;
 
 // font for <code>
-$font__code: monaco,
-consolas,
-"Andale Mono",
-"DejaVu Sans Mono",
-monospace;
+$font__code:
+    monaco,
+    consolas,
+    "Andale Mono",
+    "DejaVu Sans Mono",
+    monospace;
 
 // font for <pre>
-$font__pre: "Courier 10 Pitch",
-courier,
-monospace;
+$font__pre:
+    "Courier 10 Pitch",
+    courier,
+    monospace;
 
 
 // Site Dimensions

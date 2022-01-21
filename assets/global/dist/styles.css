@@ -360,6 +360,70 @@ html {
 
 /* Typography
 --------------------------------------------- */
+@font-face {
+  src: url("/assets/fonts/univers/UniversLTStd-Light.woff2") format("woff2"), url("/assets/fonts/univers/UniversLTStd-Light.otf") format("opentype");
+  font-style: normal;
+  font-weight: 100;
+  font-family: "Univers LT Std";
+  font-stretch: normal;
+  font-display: auto;
+}
+@font-face {
+  src: url("/assets/fonts/univers/UniversLTStd.woff2") format("woff2"), url("/assets/fonts/univers/UniversLTStd.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Univers LT Std";
+  font-stretch: normal;
+  font-display: auto;
+}
+@font-face {
+  src: url("/assets/fonts/univers/UniversLTStd-Bold.woff2") format("woff2"), url("/assets/fonts/univers/UniversLTStd-Bold.otf") format("opentype");
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Univers LT Std";
+  font-stretch: normal;
+  font-display: auto;
+}
+@font-face {
+  src: url("/assets/fonts/univers/UniversLTStd-Black.woff2") format("woff2"), url("/assets/fonts/univers/UniversLTStd-Black.otf") format("opentype");
+  font-style: normal;
+  font-weight: 800;
+  font-family: "Univers LT Std";
+  font-stretch: normal;
+  font-display: auto;
+}
+@font-face {
+  src: url("/assets/fonts/univers/UniversLTStd-XBlack.woff2") format("woff2"), url("/assets/fonts/univers/UniversLTStd-XBlack.otf") format("opentype");
+  font-style: normal;
+  font-weight: 900;
+  font-family: "Univers LT Std";
+  font-stretch: normal;
+  font-display: auto;
+}
+@font-face {
+  src: url("/assets/fonts/univers/UniversLTStd-LightCn.woff2") format("woff2"), url("/assets/fonts/univers/UniversLTStd-LightCn.otf") format("opentype");
+  font-style: normal;
+  font-weight: 100;
+  font-family: "Univers LT Std Condensed";
+  font-stretch: normal;
+  font-display: auto;
+}
+@font-face {
+  src: url("/assets/fonts/univers/UniversLTStd-Cn.woff2") format("woff2"), url("/assets/fonts/univers/UniversLTStd-Cn.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Univers LT Std Condensed";
+  font-stretch: normal;
+  font-display: auto;
+}
+@font-face {
+  src: url("/assets/fonts/univers/UniversLTStd-BoldCn.woff2") format("woff2"), url("/assets/fonts/univers/UniversLTStd-BoldCn.otf") format("opentype");
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Univers LT Std Condensed";
+  font-stretch: normal;
+  font-display: auto;
+}
 body,
 button,
 input,
@@ -384,6 +448,7 @@ h5,
 .h5,
 h6,
 .h6 {
+  font-family: "Univers LT Std Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   clear: both;
   line-height: 1.4;
   font-weight: 400;

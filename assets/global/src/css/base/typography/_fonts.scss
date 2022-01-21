@@ -1,0 +1,41 @@
+@mixin font-face($family, $filename, $weight) {
+    $path: "/assets/fonts/univers/"+ $filename;
+    src: url($path + ".woff2") format('woff2'), url($path + ".otf") format("opentype");
+    font-style: normal;
+    font-weight: $weight;
+    font-family: $family;
+    font-stretch: normal;
+    font-display: auto;
+}
+
+@font-face {
+    @include font-face("Univers LT Std", "UniversLTStd-Light", $weight-thin);
+}
+
+@font-face {
+    @include font-face("Univers LT Std", "UniversLTStd", $weight-regular);
+}
+
+@font-face {
+    @include font-face("Univers LT Std", "UniversLTStd-Bold", $weight-bold);
+}
+
+@font-face {
+    @include font-face("Univers LT Std", "UniversLTStd-Black", $weight-extra-bold);
+}
+
+@font-face {
+    @include font-face("Univers LT Std", "UniversLTStd-XBlack", $weight-black);
+}
+
+@font-face {
+    @include font-face("Univers LT Std Condensed", "UniversLTStd-LightCn", $weight-thin);
+}
+
+@font-face {
+    @include font-face("Univers LT Std Condensed", "UniversLTStd-Cn", $weight-regular);
+}
+
+@font-face {
+    @include font-face("Univers LT Std Condensed", "UniversLTStd-BoldCn", $weight-bold);
+}
