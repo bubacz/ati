@@ -360,6 +360,7 @@ html {
 
 /* Typography
 --------------------------------------------- */
+/* stylelint-disable no-invalid-position-at-import-rule */
 @font-face {
   src: url("/assets/fonts/univers/UniversLTStd-Light.woff2") format("woff2"), url("/assets/fonts/univers/UniversLTStd-Light.otf") format("opentype");
   font-style: normal;
@@ -431,9 +432,10 @@ select,
 optgroup,
 textarea {
   color: #000000;
-  font-family: "Univers LT Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
+  font-family: "Univers LT Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-style: normal;
 }
 
 h1,
@@ -447,58 +449,62 @@ h4,
 h5,
 .h5,
 h6,
-.h6 {
-  font-family: "Univers LT Std Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-  clear: both;
-  line-height: 1.4;
-  font-weight: 400;
-  margin-bottom: 0.5rem;
-  margin-top: 0;
+.h6,
+[class^=heading-] {
   display: block;
+  clear: both;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.4;
+  font-family: "Univers LT Std Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  letter-spacing: 0.2px;
 }
 
-h1, .h1 {
-  font-size: calc(1.425rem + 2.1vw);
+.heading-xl {
+  font-size: calc(1.5rem + 3vw);
 }
 @media (min-width: 1200px) {
-  h1, .h1 {
-    font-size: 3rem;
+  .heading-xl {
+    font-size: 3.75rem;
   }
 }
 
-h2, .h2 {
+.heading-lg {
+  font-size: calc(1.4125rem + 1.95vw);
+}
+@media (min-width: 1200px) {
+  .heading-lg {
+    font-size: 2.875rem;
+  }
+}
+
+.heading-md {
   font-size: calc(1.375rem + 1.5vw);
 }
 @media (min-width: 1200px) {
-  h2, .h2 {
+  .heading-md {
     font-size: 2.5rem;
   }
 }
 
-h3, .h3 {
-  font-size: calc(1.31875rem + 0.825vw);
+.heading-sm {
+  font-size: calc(1.3125rem + 0.75vw);
 }
 @media (min-width: 1200px) {
-  h3, .h3 {
-    font-size: 1.9375rem;
+  .heading-sm {
+    font-size: 1.875rem;
   }
 }
 
-h4, .h4 {
-  font-size: calc(1.28125rem + 0.375vw);
+.heading-xs {
+  font-size: calc(1.2875rem + 0.45vw);
 }
 @media (min-width: 1200px) {
-  h4, .h4 {
-    font-size: 1.5625rem;
+  .heading-xs {
+    font-size: 1.625rem;
   }
-}
-
-h5, .h5 {
-  font-size: 1.25rem;
-}
-
-h6, .h6 {
-  font-size: 1rem;
 }
 
 p {

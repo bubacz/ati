@@ -1,40 +1,39 @@
-
 .wrapper,
 .block__wrapper,
-.wp-block-group { // gets add when you select group in gutenberg editor
-    padding: 0 rem(30);
-    max-width: $site__width;
-    margin: 0 auto;
+.wp-block-group {
+	// gets add when you select group in gutenberg editor
+	padding: 0 rem(30);
+	max-width: $site__width;
+	margin: 0 auto;
 
-    @include media('>=#{$site__width + 60}') {
-        padding: 0;
-    }
+	@include media(">=#{$site__width + 60}") {
+		padding: 0;
+	}
 }
 
 .block {
-    @include padding(100px 0); // RFS Usage: https://www.npmjs.com/package/rfs#usage
+	@include padding(100px 0);
 
-    &.pad-none {
-        padding: 0;
-    }
+	&.pad-none {
+		padding: 0;
+	}
 
-    &.pad-top {
-        padding-bottom: 0;
-    }
+	&.pad-top {
+		padding-bottom: 0;
+	}
 
-    &.pad-bottom {
-        padding-top: 0;
-    }
+	&.pad-bottom {
+		padding-top: 0;
+	}
 
-    &__wrapper {
+	&__wrapper {
+		// helper classes
+		&.full {
+			max-width: none;
+		}
+	}
 
-        // helper classes
-        &.full {
-            max-width: none;
-        }
-    }
-
-    &__overline {
-        text-transform: uppercase;
-    }
+	&__overline {
+		text-transform: uppercase;
+	}
 }

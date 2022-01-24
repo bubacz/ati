@@ -1,4 +1,3 @@
-
 // default and mimic heading sizes
 h1,
 .h1,
@@ -11,36 +10,35 @@ h4,
 h5,
 .h5,
 h6,
-.h6 {
-	font-family: $font__headings;
-	clear: both;
-	line-height: 1.4;
-	font-weight: 400;
-	margin-bottom: .5rem;
-	margin-top: 0;
+.h6,
+[class^="heading-"] {
 	display: block;
-}
-// RFS Usage: https://www.npmjs.com/package/rfs#usage
-h1, .h1 {
-	@include font-size(48px);
+	clear: both;
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+	font-style: normal;
+	font-weight: $weight-bold;
+	line-height: 1.4;
+	font-family: $font__headings;
+	letter-spacing: 0.2px;
 }
 
-h2, .h2 {
+.heading-xl {
+	@include font-size(60px);
+}
+
+.heading-lg {
+	@include font-size(46px);
+}
+
+.heading-md {
 	@include font-size(40px);
 }
 
-h3, .h3 {
-	@include font-size(31px);
+.heading-sm {
+	@include font-size(30px);
 }
 
-h4, .h4 {
-	@include font-size(25px);
-}
-
-h5, .h5 {
-	@include font-size(20px);
-}
-
-h6, .h6 {
-	@include font-size(16px);
+.heading-xs {
+	@include font-size(26px);
 }

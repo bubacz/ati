@@ -2,34 +2,33 @@
 @import "../../../global/src/css/settings/variables";
 
 .cta-block {
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    .block {
-        &__wrapper {
-        }
+	background-repeat: no-repeat;
+	background-size: cover;
 
-        &__content {
-        }
+	.block {
+		&__wrapper {
+		}
 
-        &__title {
-        }
+		&__content {
+		}
 
-        &__description {
-        }
+		&__title {
+		}
 
-        &__actions {
+		&__description {
+		}
 
-        }
-    }
+		&__actions {
+		}
+	}
 
-    // settings modifier(s)
-    &.text-light {
-        .block {
-            &__title,
-            &__description {
-                color: $color-white;
-            }
-        }
-    }
+	// settings modifier(s)
+	&.text-light {
+		.block {
+			&__title,
+			&__description {
+				color: $color-white;
+			}
+		}
+	}
 }

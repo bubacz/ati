@@ -1,3 +1,4 @@
+/* stylelint-disable no-invalid-position-at-import-rule */
 @import "fonts";
 
 body,
@@ -6,10 +7,11 @@ input,
 select,
 optgroup,
 textarea {
-    color: $color-black;
-    font-family: $font__main;
-    font-size: 1rem;
-    line-height: 1.5;
+	color: $color-black;
+	font-size: 1rem;
+	line-height: 1.5;
+	font-family: $font__main;
+	font-style: normal;
 }
 
 @import "headings";
