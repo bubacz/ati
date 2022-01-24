@@ -284,7 +284,7 @@ $flexbox-grid-mixins-stack: margin-bottom !default;
 }
 
 // Special Underline for inline elements (better than text-decoration: underline)
-@mixin underline($bgcolor: $color-grey-dark) {
+@mixin underline($bgcolor: $color-grey-400) {
 	background-image: linear-gradient(to right, $bgcolor 0%, $bgcolor 100%);
 	background-repeat: repeat-x;
 	background-position: 0 100%;

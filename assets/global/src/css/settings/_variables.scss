@@ -4,10 +4,11 @@ $color-red: #E7131D;
 $color-orange: #C15401;
 $color-cream: #FCEED1;
 $color-cream-light: #FEF7E7;
-$color-grey: #9F9F9F;
-$color-grey-light: #C4C4C4;
-$color-grey-dark: #494949;
-$color-white: #F9F9F9;
+$color-grey-100: #F9F9F9;
+$color-grey-200: #C4C4C4;
+$color-grey-300: #A9A9A9;
+$color-grey-400: #494949;
+$color-white: #FFFFFF;
 $color-black: #000000;
 
 $brand: (
@@ -15,9 +16,10 @@ $brand: (
     "orange": $color-orange,
     "cream": $color-cream,
     "light": $color-cream-light,
-    "grey": $color-grey,
-    "grey-light": $color-grey-light,
-    "grey-dark": $color-grey-dark,
+    "grey-100": $color-grey-100,
+    "grey-200": $color-grey-200,
+    "grey-300": $color-grey-300,
+    "grey-400": $color-grey-400,
     "white": $color-white,
     "black": $color-black
 );

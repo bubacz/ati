@@ -70,10 +70,10 @@
   }
 }
 .split-block.text-light {
-  color: #F9F9F9;
+  color: #FFFFFF;
 }
 .split-block.text-light .block__title, .split-block.text-light .block__description {
-  color: #F9F9F9;
+  color: #FFFFFF;
 }
 .split-block.text-light .block__overline {
   color: #C15401;

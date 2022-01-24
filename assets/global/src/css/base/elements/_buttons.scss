@@ -3,25 +3,31 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 .button {
-	border-style: solid;
 	display: inline-block;
-	border-color: $color-grey-light;
+	padding: rem(12) rem(30) rem(10);
 	border-width: rem(2);
-	border-radius: rem(3);
-	color: $color-grey;
-	line-height: 1;
-	padding: rem(12) rem(24);
+	border-style: solid;
+	border-color: $color-grey-300;
+	border-radius: rem(4);
+	color: $color-grey-300;
+	font-weight: $weight-bold;
+	font-size: 1rem;
+	line-height: 1.5;
+	text-align: center;
 	text-decoration: none;
+	text-transform: uppercase;
+	vertical-align: middle;
+	letter-spacing: 0.01em;
+	background: $color-grey-300;
 	transition: all $animation-average $base-animation-easing;
 	transition-property: background, border-color;
-	background:  $color-grey-light;
 
 	&:hover {
 		cursor: pointer;
 	}
 
 	&[disabled] {
-		color: $color-grey-light;
+		color: $color-grey-300;
 		background: none;
 
 		&:hover {
@@ -36,142 +42,61 @@ input[type="submit"],
 }
 
 .button {
-
-	&--primary {
-		background-color:  $color-red;
+	&--red {
+		background-color: $color-red;
 		border-color: $color-red;
 		color: $color-white;
 
-		&:hover {
-			background: darken($color-red, 10%);
-		}
-
+		&:hover,
 		&:focus {
-			outline: darken($color-red, 10%) auto 1px;
-			background: darken($color-red, 10%);
+			background: $color-white;
+			color: $color-red;
 		}
 
 		&-outline {
-			background:  none;
+			background: none;
 			border-color: $color-red;
 			color: $color-red;
 
 			&:hover {
 				background: $color-red;
 				color: $color-white;
-
 			}
-	
+
 			&:focus {
-				outline: darken($color-red, 10%) auto 1px;
+				outline: $color-red;
 				background: $color-red;
 				color: $color-white;
-
 			}
 		}
 	}
 
-	&--secondary {
-		background-color:  $color-black;
-		border-color: $color-black;
-		color: $color-white;
-
-		&:hover {
-			background: darken($color-black, 10%);
-		}
-
-		&:focus {
-			outline: darken($color-black, 10%) auto 1px;
-			background: darken($color-black, 10%);
-		}
-
-		&-outline {
-			background:  none;
-			border-color: $color-black;
-			color: $color-black;
-
-			&:hover {
-				background: $color-black;
-				color: $color-white;
-
-			}
-	
-			&:focus {
-				outline: darken($color-black, 10%) auto 1px;
-				background: $color-black;
-				color: $color-white;
-
-			}
-		}
-	}
-
-	&--light {
-		background-color:  $color-white;
+	&--white {
+		background-color: $color-white;
 		border-color: $color-white;
-		color: $color-grey;
+		color: $color-black;
 
-		&:hover {
-			background: none;
-			color: $color-white;
-		}
-
+		&:hover,
 		&:focus {
-			outline: darken($color-white, 10%) auto 1px;
-			background: none;
+			background: $color-black;
+			border-color: $color-black;
 			color: $color-white;
 		}
 
 		&-outline {
-			background:  none;
+			background: none;
 			border-color: $color-white;
 			color: $color-white;
 
 			&:hover {
 				background: $color-white;
-				color: $color-grey;
-
+				color: $color-black;
 			}
-	
+
 			&:focus {
 				outline: darken($color-white, 10%) auto 1px;
 				background: $color-white;
-				color: $color-grey;
-
-			}
-		}
-	}
-
-	&--dark {
-		background-color:  $color-grey;
-		border-color: $color-grey;
-		color: $color-white;
-
-		&:hover {
-			background: none;
-			color: $color-grey;
-		}
-
-		&:focus {
-			outline: darken($color-grey, 10%) auto 1px;
-			background: darken($color-grey, 10%);
-		}
-
-		&-outline {
-			background:  none;
-			border-color: $color-grey;
-			color: $color-grey;
-
-			&:hover {
-				background: $color-grey;
-				color: $color-white;
-
-			}
-	
-			&:focus {
-				outline: darken($color-grey, 10%) auto 1px;
-				background: $color-grey;
-				color: $color-white;
-
+				color: $color-black;
 			}
 		}
 	}
@@ -179,12 +104,15 @@ input[type="submit"],
 	&--plain {
 		background: none;
 		border: none;
-		border: none;
 		text-decoration: underline;
 
 		&:hover {
 			text-decoration: none;
 		}
+	}
+
+	&--thin {
+		padding: rem(7) rem(26) rem(5);
 	}
 }
 
