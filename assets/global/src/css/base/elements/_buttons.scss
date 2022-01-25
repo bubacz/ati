@@ -3,7 +3,8 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 .button {
-	display: inline-block;
+	display: flex;
+	align-items: center;
 	padding: rem(12) rem(30) rem(10);
 	border-width: rem(2);
 	border-style: solid;
@@ -13,6 +14,7 @@ input[type="submit"],
 	font-weight: $weight-bold;
 	font-size: 1rem;
 	line-height: 1.5;
+	font-family: $font__buttons;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
