@@ -1,44 +1,42 @@
 // Brand Colors
 //==================================================================*/
-$color-red: #E7131D;
-$color-orange: #C15401;
-$color-cream: #FCEED1;
-$color-cream-light: #FEF7E7;
-$color-grey-100: #F9F9F9;
-$color-grey-200: #C4C4C4;
-$color-grey-300: #A9A9A9;
+$color-red: #e7131d;
+$color-orange: #c15401;
+$color-cream: #fceed1;
+$color-cream-light: #fef7e7;
+$color-grey-100: #f9f9f9;
+$color-grey-200: #c4c4c4;
+$color-grey-300: #a9a9a9;
 $color-grey-400: #494949;
-$color-white: #FFFFFF;
+$color-white: #ffffff;
 $color-black: #000000;
 
 $brand: (
 	"red": $color-red,
-    "orange": $color-orange,
-    "cream": $color-cream,
-    "light": $color-cream-light,
-    "grey-100": $color-grey-100,
-    "grey-200": $color-grey-200,
-    "grey-300": $color-grey-300,
-    "grey-400": $color-grey-400,
-    "white": $color-white,
-    "black": $color-black
+	"orange": $color-orange,
+	"cream": $color-cream,
+	"light": $color-cream-light,
+	"grey-100": $color-grey-100,
+	"grey-200": $color-grey-200,
+	"grey-300": $color-grey-300,
+	"grey-400": $color-grey-400,
+	"white": $color-white,
+	"black": $color-black
 );
-
 
 // Alert Colors
 //==================================================================*/
 $color-danger: #f44336;
-$color-success: #4CAF50;
-$color-info: #2196F3;
+$color-success: #4caf50;
+$color-info: #2196f3;
 $color-warning: #ff9800;
 
 $alert: (
 	danger: $color-danger,
-    success: $color-success,
-    info: $color-info,
-    warning: $color-warning
+	success: $color-success,
+	info: $color-info,
+	warning: $color-warning
 );
-
 
 // Font Weights
 //==================================================================*/
@@ -52,50 +50,38 @@ $weight-bold: 700;
 $weight-extra-bold: 800;
 $weight-black: 900;
 
-
 // Base Fonts
 //==================================================================*/
 $font__fallbacks:
     // Safari for macOS and iOS (San Francisco)
-    -apple-system,
-    // Chrome < 56 for macOS (San Francisco)
-    BlinkMacSystemFont,
-    // Windows
-    "Segoe UI",
-    // Android
-    Roboto,
-    // Basic web fallback
-    "Helvetica Neue",
-    Arial,
-    // Linux
-    "Noto Sans",
-    // Sans serif fallback
-    sans-serif,
-    !default;
-    
+	-apple-system,
+	// Chrome < 56 for macOS (San Francisco)
+	BlinkMacSystemFont,
+	// Windows
+	"Segoe UI",
+	// Android
+	Roboto,
+	// Basic web fallback
+	"Helvetica Neue",
+	Arial,
+	// Linux
+	"Noto Sans",
+	// Sans serif fallback
+	sans-serif !default;
+
 $font__main: "Univers LT Std", $font__fallbacks;
 $font__headings: "Univers LT Std Condensed", $font__fallbacks;
 $font__buttons: "Univers LT Std Condensed", $font__fallbacks;
 
 // font for <code>
-$font__code:
-    monaco,
-    consolas,
-    "Andale Mono",
-    "DejaVu Sans Mono",
-    monospace;
+$font__code: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 
 // font for <pre>
-$font__pre:
-    "Courier 10 Pitch",
-    courier,
-    monospace;
-
+$font__pre: "Courier 10 Pitch", courier, monospace;
 
 // Site Dimensions
 //==================================================================*/
 $site__width: 1400px;
-
 
 // Transition
 //==================================================================*/

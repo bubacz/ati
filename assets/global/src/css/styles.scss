@@ -32,38 +32,26 @@
 /*--------------------------------------------------------------
 # Mixins and Variables
 --------------------------------------------------------------*/
-@import 'functions';
+@import "functions";
 //@import 'settings/variables'; // add colors array and get color function
-
-
-
-
 
 /*--------------------------------------------------------------
 # Base
 --------------------------------------------------------------*/
 @import "base/base";
 
-
-
-
-
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
-@import 'layouts/header';
-@import 'layouts/global';
-@import 'layouts/wrappers';
-@import 'layouts/footer';
-@import 'layouts/grid';
+@import "layouts/header";
+@import "layouts/global";
+@import "layouts/wrappers";
+@import "layouts/footer";
+@import "layouts/grid";
 // uncomment as need and will require extra work
 //@import 'layouts/content-sidebar';
 //@import 'layouts/sidebar-content';
 //@import 'layouts/no-sidebar';
-
-
-
-
 
 /*--------------------------------------------------------------
 # Utilities

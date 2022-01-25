@@ -38,8 +38,8 @@ var {
 code {
 	border-radius: rem(3);
 	color: $color-danger;
-	background-color: rgba($color-danger, .1);
-	
+	background-color: rgba($color-danger, 0.1);
+
 	pre & {
 		color: inherit;
 		background-color: transparent;
@@ -54,8 +54,8 @@ samp {
 
 kbd {
 	padding: 2px 4px;
-    font-size: 90%;
-    border-radius: rem(3);
+	font-size: 90%;
+	border-radius: rem(3);
 }
 
 abbr,
