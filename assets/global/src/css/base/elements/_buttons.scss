@@ -34,11 +34,6 @@ input[type="submit"],
 			cursor: not-allowed;
 		}
 	}
-
-	&:active,
-	&:focus {
-		outline: $color-red auto 1px;
-	}
 }
 
 .button {
@@ -101,23 +96,49 @@ input[type="submit"],
 		}
 	}
 
-	&--plain {
+	&--nav {
 		background: none;
 		border: none;
-		text-decoration: underline;
+		padding: rem(12) 0;
+		color: rgba($color-black, 0.6);
 
 		&:hover {
-			text-decoration: none;
+			color: $color-red;
+		}
+
+		&:focus,
+		&:focus-visible {
+			@include underline($color-red);
+
+			outline: none;
+			color: $color-red;
+		}
+
+		&.active {
+			@include underline($color-red);
+
+			color: $color-red;
+		}
+	}
+
+	&--link {
+		background: none;
+		border: none;
+		padding: rem(12) 0;
+		color: $color-red;
+		text-transform: none;
+
+		&:hover,
+		&:focus,
+		&:focus-visible,
+		&.active {
+			outline: none;
+			color: $color-red;
+			text-decoration: underline;
 		}
 	}
 
 	&--thin {
 		padding: rem(7) rem(26) rem(5);
-	}
-}
-
-.buttons {
-	&.aligncenter {
-		text-align: center;
 	}
 }
