@@ -2,41 +2,60 @@ $default-grid-columns: 12;
 $default-grid-gutter: 3%;
 
 .grid {
+	@include media(">=md") {
+		@include grid($gutter: $default-grid-gutter);
+	}
 
-    @include media('>=md') {
-        @include grid($gutter: $default-grid-gutter);
-    }
+	// create .grid__col-1 through .grid__col-12 styles
+	@for $i from 1 through $default-grid-columns {
+		> .grid__col-#{$i} {
+			@include media("<md") {
+				margin-bottom: rem(24);
+			}
 
-    // create .grid__col-1 through .grid__col-12 styles
-    @for $i from 1 through $default-grid-columns {
-        > .grid__col-#{$i} {
+			@include media(">=md") {
+				@include grid-col(
+					$col: $i,
+					$grid-columns: $default-grid-columns,
+					$gutter: $default-grid-gutter
+				);
+			}
+		}
+	}
 
-            @include media('<md') {
-                margin-bottom: rem(24);
-            }
+	&--fourths {
+		@include media(">=md") {
+			@include grid($flex-wrap: wrap, $gutter: $default-grid-gutter);
+		}
 
-            @include media('>=md') {
-                @include grid-col($col: $i, $grid-columns: $default-grid-columns, $gutter: $default-grid-gutter);
-            }
-        }
-    }
+		.grid__col {
+			margin-bottom: rem(36);
+			@include media(">=md", "<lg") {
+				@include grid-col(6, $gutter: $default-grid-gutter);
+			}
 
-    &--fourths {
-        @include media('>=md') {
-            @include grid($flex-wrap: wrap, $gutter: $default-grid-gutter);
-        }
-        
-        .grid__col {
-            margin-bottom: rem(36);
-            @include media('>=md', '<lg') {
-                @include grid-col(6, $gutter: $default-grid-gutter);
-            }
+			@include media(">=lg") {
+				margin-bottom: 0;
+				@include grid-col(3, $gutter: $default-grid-gutter);
+			}
+		}
+	}
 
-            @include media('>=lg') {
-                margin-bottom: 0;
-                @include grid-col(3, $gutter: $default-grid-gutter);
-            }
-        }
-    }
+	&--auto {
+		@include media(">=md") {
+			@include grid($flex-wrap: wrap, $gutter: $default-grid-gutter);
+		}
+
+		.grid__col {
+			flex: 0 0 auto;
+
+			@include media("<md") {
+				margin-bottom: rem(24);
+			}
+
+			@include media(">=md") {
+				@include grid-col($gutter: $default-grid-gutter);
+			}
+		}
+	}
 }
-
